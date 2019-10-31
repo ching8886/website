@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>starbucks' website</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="starbucks-logo.png" alt="logo" width="130"/>
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#new" class="nav-link">新品 </a></li>
+                        <li><a href="#video" class="nav-link">關於 </a></li>
+                        <li><a href="#dessert" class="nav-link">甜點 </a></li>
+                        <li><a href="#activity" class="nav-link">活動 </a></li>
+                        <li><a href="#product" class="nav-link">周邊</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="new">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <br><br><br>
+                <div class="carousel-item active">
+                    <img class="w-100" src="1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>Coffee</h1>
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>Dessert</h1>
+                    </div>
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="5.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>Breakfast</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 影片 -->
+    <section class="container-fluid video-area" id="video">
+        <div class="video-container-center">
+            <p>
+                <iframe width="688" height="387" src="https://www.youtube.com/embed/ncT3xALqpFg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+        </div>
+    </section>
+
+    <!-- 產品介紹區塊(創意) -->
+    <section id="dessert" class="dessert_area">
+        <div class="container">
+            <h2 class="text-center">
+                <p>
+                    甜點
+                </p>
+            </h2>
+            <!-- 產品照片 -->
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img class="w-50" alt="產品照片1" src="11.jpg" >
+                            <div class="card-title-wrap">
+                                <p>
+                                    <span class="card-title">鬼精靈大福</span><span class="card-title">鬼精靈大福</span>
+                                    <span class="card-text">Pumpkin Mochi</span>
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    <h4>柔軟的大福皮包裹著南瓜卡士達及黑糖戚風蛋糕，再擠上鮮奶油及白巧克力慕斯球，一口咬下能品嘗到多重口感，加上討喜鬼精靈造型，滿足您的視覺及味蕾。</h4>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img class="w-50" alt="產品照片2" src="22.jpg">
+                            <div class="card-title-wrap">
+                                <p>
+                                    <span class="card-title">抹茶紅豆千層薄餅</span>
+                                    <span class="card-text">Matcha & Red Bean Mille Crepes</span>
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    <h4>輕盈的抹茶千層薄餅，抹上層層的抹茶醬與紅豆泥，濃郁的抹茶搭配甜蜜的紅豆餡，口感豐富相得益彰。</h4>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組3 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img class="w-50" alt="產品照片3" src="33.jpg" >
+                            <div class="card-title-wrap">
+                                <p>
+                                    <span class="card-title">芋頭蒙布朗</span>
+                                    <span class="card-text">Mashed Taro Mont Blanc</span>
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    <h4>使用香濃芋頭泥製作而成的奶油，覆蓋在綿軟蛋糕上，並且夾著綿密香甜芋頭泥，香氣十足，吃在嘴裡，幸福滿足。</h4>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <p>
+                        商品皆為限量供應，售完為止。</br>
+                        網站刊載之商品僅供參考，實際商品以門市現貨為準。</br>
+                        詳細食品營養標示說明，請見營養標示表。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 活動 -->
+        <section id="activity" class="activity_area">
+        <div class="container">
+            <div class="row">
+                    <img class="w-100" src="3.jpg" alt="">
+            </div>
+        </div>
+        </section>
+
+        <!-- 周邊 -->
+        <section id="product" class="product_area">
+            <div class="container">
+                <div class="row">
+                        <img class="w-100" src="6.jpg" alt="">
+                </div>
+            </div>
+            </section>
+    </section>
+    
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img class="w-50" src="starbucks-logo.png">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <p>
+                        <li>關於星巴克 About</li>
+                        <li>成為我們的夥伴 Partner</li>
+                        <li>顧客常見問題 Question</li>
+                        <li>聯絡我們 Service</li>
+                        <li>客服專線 0800-000-482</li>
+                    </p>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>© 2019 Starbucks Coffee Company. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+</body>
+
+</html>
